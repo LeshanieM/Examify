@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/*IT23154230 - H.H.W.Palliyaguruge.*/
+h1{
+	margin-left:50px;
+}
+
+body {
+    background-color: lightblue;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Centering the form content */
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Full viewport height */
+    text-align: left;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Adjust width as needed */
+    gap: 10px; /* Space between input fields */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+}
+
+input[type="submit"], input[type="reset"], button {
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+}
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- IT23154230 - H.H.W.Palliyaguruge. -->
+
+<Queries>
+
+	
+	
+
+	<!-- insert examiner info Query -->
+	<query id="insert_examiner">
+        <![CDATA[
+          	insert into examiners (examinerID , examinerName , contactNo , address , qualifications , email ) 
+          	values (?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Select a particular employee by id Query -->
+	<query id="examiner_by_id">
+         <![CDATA[        
+            select * from examiners where examiners.examinerID = ?
+        ]]>
+	</query>
+
+	<!-- Select all employees -->
+	<query id="all_examiners">
+         <![CDATA[        
+            select * from examiners
+        ]]>
+	</query>
+
+	<!-- Delete a particular examiner by id Query -->
+	<query id="remove_examiner">
+         <![CDATA[        
+            delete from examiners where examiners.examinerID = ?
+        ]]>
+	</query>
+	
+	<!-- Update a particular examiner by id Query -->
+	<query id="update_examiner">
+         <![CDATA[        
+            update examiners as e 
+            set e.examinerName = ?, e.contactNo = ?, e.address = ?, e.qualifications = ?, e.email = ? 
+            where e.examinerID = ?
+        ]]>
+	</query>
+	
+		<!-- Get examiner IDs Query -->
+	<query id="examiner_ids">
+         <![CDATA[        
+            select e.examinerID from examiners as e
+        ]]>
+	</query>
+
+</Queries>

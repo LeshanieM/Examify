@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Examify</display-name>
+  <welcome-file-list>
+  
+    <welcome-file>NewExamIndex.jsp</welcome-file>
+    
+  </welcome-file-list>
+  
+  
+  
+ 
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name> 
+		<servlet-class>servlet.LoginServlet</servlet-class>
+	</servlet>
+	
+   <servlet-mapping> 
+  	 <servlet-name>LoginServlet</servlet-name> 
+  	 <url-pattern>/LoginServlett</url-pattern>
+   </servlet-mapping>
+   
+   
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name> 
+		<servlet-class>servlet.LogoutServlet</servlet-class>
+	</servlet>
+	
+   <servlet-mapping> 
+  	 <servlet-name>LogoutServlet</servlet-name> 
+  	 <url-pattern>/LogoutServlete</url-pattern>
+   </servlet-mapping>
+   
+ 
+	 <servlet>
+		<servlet-name>results</servlet-name>
+		<servlet-class>servlet.resultsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>results</servlet-name>
+		<url-pattern>/results</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>insertResultsServlet</servlet-name>
+	    <servlet-class>servlet.insertResultsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>insertResultsServlet</servlet-name>
+	    <url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>updateResultsServlet</servlet-name>
+		<servlet-class>servlet.updateResultsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateResultsServlet</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>deleteResultsServlet</servlet-name>
+		<servlet-class>servlet.deleteResultsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteResultsServlet</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 <servlet>
+    <servlet-name>AddExaminerServlet</servlet-name>
+    <servlet-class>servlet.AddExaminerServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AddExaminerServlet</servlet-name>
+    <url-pattern>/AddExaminerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteExaminerServlet</servlet-name>
+    <servlet-class>servlet.DeleteExaminerServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DeleteExaminerServlet</servlet-name>
+    <url-pattern>/DeleteExaminerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetExaminerServlet</servlet-name>
+    <servlet-class>servlet.GetExaminerServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>GetExaminerServlet</servlet-name>
+    <url-pattern>/GetExaminerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ListExaminerServlet</servlet-name>
+    <servlet-class>servlet.ListExaminerServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ListExaminerServlet</servlet-name>
+    <url-pattern>/ListExaminerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UpdateExaminerServlet</servlet-name>
+    <servlet-class>servlet.UpdateExaminerServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UpdateExaminerServlet</servlet-name>
+    <url-pattern>/UpdateExaminerServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  <servlet>
+		<servlet-name>PaymentServlet</servlet-name> 
+		<servlet-class> servlet.PaymentServlet</servlet-class>
+	
+	</servlet>
+   <servlet-mapping> 
+  	 <servlet-name>PaymentServlet</servlet-name> 
+  	 <url-pattern>/Payment</url-pattern>
+   </servlet-mapping>
+   
+   
+   
+   
+   <servlet>
+		<servlet-name>PaymentInsertServlet</servlet-name> 
+		<servlet-class> servlet.PaymentInsertServlet</servlet-class>
+	
+	</servlet>
+	
+   <servlet-mapping> 
+  	 <servlet-name>PaymentInsertServlet</servlet-name> 
+  	 <url-pattern>/PaymentInsert</url-pattern>
+   </servlet-mapping>
+   
+   
+    
+   <servlet>
+		<servlet-name>UpdatePaymentServlet</servlet-name> 
+		<servlet-class> servlet.UpdatePaymentServlet</servlet-class>
+	
+	</servlet>
+	
+   <servlet-mapping> 
+  	 <servlet-name>UpdatePaymentServlet</servlet-name> 
+  	 <url-pattern>/UpdatePayment</url-pattern>
+   </servlet-mapping>
+   
+   
+   
+   
+   <servlet>
+		<servlet-name>DeletePaymentServlet</servlet-name> 
+		<servlet-class> servlet.DeletePaymentServlet</servlet-class>
+	
+	</servlet>
+	
+   <servlet-mapping> 
+  	 <servlet-name>DeletePaymentServlet</servlet-name> 
+  	 <url-pattern>/DeletePayment</url-pattern>
+   </servlet-mapping>
+</web-app>

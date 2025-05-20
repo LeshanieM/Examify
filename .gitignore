@@ -1,0 +1,25 @@
+# Compiled files
+*.class
+
+# Build folders
+/target/
+/bin/
+/out/
+
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# Logs and temp files
+*.log
+/logs/
+*.tmp
+
+# Config files with secrets
+/config/*.properties
+/src/main/java/util/config.properties
+
+# Build output
+/build/
+/build/classes/

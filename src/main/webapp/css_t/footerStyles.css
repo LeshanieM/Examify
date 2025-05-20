@@ -1,0 +1,32 @@
+/* IT23149380 - P.G.T.N.D.Gallage */
+
+@charset "UTF-8";
+
+	.footer {
+	   position: fixed;
+	   left: 0;
+	   bottom: 0;
+	   width: 100%;
+	   background-color: lightsteelblue;
+	   color: black;
+	   text-align: center;
+	   font-family: Agency FB;
+	   font-size : 25px;
+	 }  
+	
+	li {
+		  float: right;
+		}
+		
+		
+	.footerleft {
+		float: left;
+		margin-right: 25px;
+		padding: 14px 14px;
+		font-family: Sans-Serif;
+		font-size : 20px;
+	}
+
+	#id1 {
+    color: green;
+}

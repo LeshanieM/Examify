@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- IT23157446 - B.A.L.M.U.Bogoda Arachchi -->
+
+<queries>
+	
+	<query id ="create_NewExam_table">
+	
+		<![CDATA[
+		
+			CREATE TABLE NewExam(
+				eID varchar (10) NOT NULL, 
+				courseName varchar (30),
+				examType varchar (30),
+				date varchar (30),
+				courseID varchar (30),
+				PRIMARY KEY (eID)
+			);
+		]]>
+		
+	
+	</query>
+	
+	
+	<query id ="insert_NewExam">
+	
+		<![CDATA[
+		
+			INSERT INTO NewExam(eID,courseName,examType,date,courseID)
+			VALUES (?,?,?,?,?);
+		]]>
+		
+	
+	</query>
+	
+	
+	<query id ="get_NewExamID">
+	
+		<![CDATA[
+		
+			SELECT eId FROM NewExam;
+		]]>
+		
+	
+	</query>
+	
+	
+	<query id ="get_ALL_NewExams">
+	
+		<![CDATA[
+		
+			SELECT * FROM NewExam;
+		]]>
+		
+	
+	</query>
+	
+	
+	<query id ="get_NewExams_by_id">
+	
+		<![CDATA[
+		
+			SELECT * FROM NewExam where eID = ?;
+		]]>
+		
+	
+	</query>
+	
+	<query id ="update_NewExam">
+	
+		<![CDATA[
+		
+			UPDATE NewExam SET courseName = ?, examType = ?, date = ?, courseID = ? WHERE eID = ? ;
+		]]>
+		
+	
+	</query>
+	
+	<query id ="delete_NewExam">
+	
+		<![CDATA[
+		
+			DELETE FROM NewExam WHERE eID = ?;
+		]]>
+		
+	
+	</query>
+	
+</queries>
